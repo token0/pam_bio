@@ -14,6 +14,8 @@ PAM module that run howdy, fprint and retrieve password in parallel.
 
 ```
 sudo pip3 install meson ninja
+
+[ -d "/lib/security" ] || { [ -d "/usr/lib/$(uname -m)-linux-gnu/security/" ] && sudo ln -s /usr/lib/$(uname -m)-linux-gnu/security /lib/security ; }
 ```
 
 ## Build
