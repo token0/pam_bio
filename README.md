@@ -10,9 +10,15 @@ PAM module that run howdy, fprint and retrieve password in parallel.
 - [ ] Retrieve username before starting authn task
 - [ ] Check gdm settings before start fprint authn
 
+## Prerequisites
+
+```
+sudo pip3 install meson ninja
+```
+
 ## Build
 
-``` sh
+```
 meson setup .build
 meson compile -C .build
 meson install -C .build  # install pam_bio.so to /lib/security
